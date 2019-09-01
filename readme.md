@@ -1,20 +1,15 @@
 # Node.js
-## hello node
-- 使用`node`自带的`http`模块
+
+## CommonJS规范
+
+### CommonJS模块规范
+- 模块引用
   ```
-  const http = require('http')
+  var math = require('math')
   ```
-- 调用`http.creatServer`方法在本机上开启一个http服务，监听8000端口
-  ```
-  http.createServer((req, res) => {
-    res.end('Hello Node!')
-  }).listen(8000, () => { 
-    console.log('listen on 8000')
-  })
+  `CommonJS`中存在`require()`方法，这个方法接受模块标识，以此引入一个模块的`API`到当前上下文中
+- 模块定义
   ```
 
-## 如何提供一个`api`
-- 为隐式响应头设置单个响应头的值。
   ```
-  res.setHeader('Content-Type', 'application/json;charset=utf-8');
-  ```
+  上下文提供了`exports`对象用于导出当前模块的方法或者变量，并且它是唯一导出的出口。
