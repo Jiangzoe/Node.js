@@ -7,6 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>这里是首页</h1>
+    <h1>留言板</h1>
+    <button>发表留言</button>
+    <div>
+        <ul>
+            {{each comments}}
+            <li>{{ $value.name }}说：{{ $value.message}}<span>{{$value.dateTime}}</span></li>
+            {{/each}}
+        </ul>
+    </div>
 </body>
 </html>
