@@ -1,0 +1,1 @@
+window.alert('一只酱你好')
