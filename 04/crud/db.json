@@ -1,10 +1,1 @@
-{
-    "students": [
-        {"id": 1, "name": "一只酱", "gender": 0, "age": 18, "hobbies": "吃饭、睡觉、lol"},
-        {"id": 2, "name": "一只酱", "gender": 0, "age": 18, "hobbies": "吃饭、睡觉、lol"},
-        {"id": 3, "name": "一只酱", "gender": 0, "age": 18, "hobbies": "吃饭、睡觉、lol"},
-        {"id": 4, "name": "一只酱", "gender": 0, "age": 18, "hobbies": "吃饭、睡觉、lol"},
-        {"id": 5, "name": "一只酱", "gender": 0, "age": 18, "hobbies": "吃饭、睡觉、lol"},
-        {"id": 6, "name": "一只酱", "gender": 0, "age": 18, "hobbies": "吃饭、睡觉、lol"}
-    ]
-}
+{"students":[{"id":1,"name":"一只酱","gender":0,"age":18,"hobbies":"吃饭、睡觉、lol"},{"id":2,"name":"一只酱","gender":0,"age":18,"hobbies":"吃饭、睡觉、lol"},{"id":3,"name":"一只酱","gender":0,"age":18,"hobbies":"吃饭、睡觉、lol"},{"id":4,"name":"一只酱","gender":0,"age":18,"hobbies":"吃饭、睡觉、lol"},{"id":5,"name":"一只酱","gender":0,"age":18,"hobbies":"吃饭、睡觉、lol"},{"id":6,"name":"一只酱","gender":0,"age":18,"hobbies":"吃饭、睡觉、lol"},{"name":"叶彬彬","gender":"0","age":"25","hobbies":"睡觉、打工","id":7},{"name":"叶彬彬","gender":"0","age":"25","hobbies":"睡觉、打工","id":8}]}

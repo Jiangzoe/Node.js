@@ -28,11 +28,11 @@ router.get('/students/new', function (req,res) {
 
 router.post('/students/new', function (req,res) {
     // console.log(req.body)
-    fs.readFile('./db.json', function(err, data) {
+    Students.save (req.body, function (err) {
         if (err) {
             return res.status(500).send('Server error')
         }
-
+        res.redirect('/students')
     })
 })
 
