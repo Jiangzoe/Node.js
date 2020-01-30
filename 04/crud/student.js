@@ -40,8 +40,29 @@ exports.save = function (student, callback) {
 }
 
 // 更新学生
-exports.update = function () {
-    
+exports.updateById = function (student, callback) {
+    fs.readFile(dbPath,'utf8', function(err, data) {
+        if (err) {
+            return callback(err)
+        }
+        callback(null, JSON.parse(data).students)
+        
+        var stu = students.find(function(item) {
+            return item.id === student.id
+        })
+        for (var key in student) {
+            stu[key] = student[key]
+        }
+        var fileData = JSON.stringify({
+            students: students
+        })
+        fs.writeFile(dbPath, fileData, function (err) {
+            if (err) {
+                return callback(err)
+            }
+            callback(null)
+        })
+    })
 }
 
 // 删除学生
